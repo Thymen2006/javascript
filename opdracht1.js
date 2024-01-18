@@ -1,6 +1,6 @@
 /*
 opdracht1
-*/
+
 var number = 0;
 function addElement(){
 
@@ -17,13 +17,13 @@ function addElement(){
         document.getElementById("myBtn").disabled = true;
     }
 }
-
+*/
 
 
 
 /*
 opdracht2
-
+*/
 function addElement(){
 for(let i = 1;i < 50; i++){
         const knop = document.createElement('div');
@@ -39,4 +39,4 @@ for(let i = 1;i < 50; i++){
     }
     }
 }
-*/
+
