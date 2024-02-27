@@ -47,12 +47,12 @@ img{
     border-radius: 40px;
     border-width: 3px;
 
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
 }
-#gooien{
+#gooien, #volgende, #nieuw{
     margin: 5px;
-    width: 8vw;
+    width: 9vw;
     height: 2vw;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -63,9 +63,13 @@ img{
     border-radius: 5px;
     border-width: 3px;
 }
-#gooien:hover{
+#gooien:hover, #volgende:hover, #nieuw:hover{
     background-color: chocolate;
 }
+#nieuw{
+    margin-top: 10vw;
+}
+
 .grid-item2 p{
     border-style: solid;
     border-color: black;
@@ -89,4 +93,45 @@ img{
 }
 li{
     text-align: left;
+}
+.onthoud{
+    border-style: solid;
+    border-color: black;
+    border-radius: 40px;
+    border-width: 3px;
+}
+.onthoud.active{
+    background-color: none;
+}
+.onthoud:hover{
+    background-color: chocolate;
+}
+#onthoud1.is-active{background-color: chocolate;}
+#onthoud2.is-active{background-color: chocolate;}
+#onthoud3.is-active{background-color: chocolate;}
+#onthoud4.is-active{background-color: chocolate;}
+#onthoud5.is-active{background-color: chocolate;}
+
+fieldset{
+    border: none;
+    text-align: left;
+}
+legend{
+    text-align: center;
+}
+.in{
+    max-width: auto;
+    width: 20vw;
+}
+input{
+    border-left:none;
+    border-right: none;
+    border-top: none;
+}
+#een:hover{
+    color: chocolate;
+}
+p{
+    display: inline;
+    margin-right: 2vw;
 }

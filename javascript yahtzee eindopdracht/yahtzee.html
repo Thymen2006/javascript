@@ -8,67 +8,86 @@
     <body>
         <div class="grid-container">
             <div class="grid-item1">
-                <p>speler 1</p>
-                <li>
-                    <ul>1</ul>
-                    <ul>2</ul>
-                    <ul>3</ul>
-                    <ul>4</ul>
-                    <ul>5</ul>
-                    <ul>6</ul>
-                    <br>
-                    <ul>three of a kind</ul>
-                    <ul>four of a kind</ul>
-                    <ul>full house</ul>
-                    <ul>kleine straat</ul>
-                    <ul>groote straat</ul>
-                    <ul>top score/yahtzee</ul>
-                    <ul>chance</ul>
-                    <br>
-                    <ul>totaal punten</ul>
-                </li>
+                <fieldset>
+                    <legend>speler 1</legend>
+                    <p id="een">een = </p><button id="eenb" type="button" onclick="vasta(1)">kies</button><br><br>
+                    <p id="twee">twee = </p><button id="tweeb" type="button" onclick="vasta(2)">kies</button><br><br>
+                    <p id="drie">drie = </p><button id="drieb" type="button" onclick="vasta(3)">kies</button><br><br>
+                    <p id="vier">vier = </p><button id="vierb" type="button" onclick="vasta(4)">kies</button><br><br>
+                    <p id="vijf">vijf = </p><button id="vijfb" type="button" onclick="vasta(5)">kies</button><br><br>
+                    <p id="zes">zes = </p><button id="zesb" type="button" onclick="vasta(6)">kies</button><br><br>
+                    <hr>
+                    <p id="subtotaal1">subtotaal = </p><br><br>
+                    <p id="bonus1">bonus = </p><br><br>
+                    <p id="totaal1">totaal = </p><br><br>
+                    <hr>
+                    <label for="threeofakind1">three of a kind</label>
+                    <input class="in" type="number" id="threeofakind1" name="threeofakind"><br><br>
+                    <label for="fourofakind1">four of a kind</label>
+                    <input class="in" type="number" id="fourofakind1" name="fourofakind"><br><br>
+
+                    <input type="checkbox" id="full1" name="full" value="25">
+                    <label for="full1"> Full house (25)</label><br>
+                    <input type="checkbox" id="klein1" name="klein" value="30">
+                    <label for="klein1"> kleine straat (30)</label><br>
+                    <input type="checkbox" id="groot1" name="groot" value="40">
+                    <label for="groot1"> groote traat (40)</label><br>
+                    <input type="checkbox" id="yatzee1" name="yathzee" value="50">
+                    <label for="yatzee1"> yathzee (50)</label><br><br>
+
+                    <label for="chance1">chance</label>
+                    <input class="in" type="number" id="chance1" name="chance"><br><br>
+                    <hr>
+                    <label for="totaalall1">totaal alles</label>
+                    <input class="in" type="number" id="totaalall1" name="totaalall"><br><br>
+                    </fieldset>
             </div>
             <div class="grid-item2">
                 <button id="gooien" type="button" onclick="dobel()">gooien!</button>
+                <button id="volgende" type="button" onclick="volgende()">volgende speler</button>
                 <br>
-                <img id="img1" src="foto/1ogen.png" alt="dobbelsteen">
-                <img id="img2" src="foto/2ogen.png" alt="dobbelsteen">
-                <img id="img3" src="foto/3ogen.png" alt="dobbelsteen">
-                <img id="img4" src="foto/4ogen.png" alt="dobbelsteen">
-                <img id="img5" src="foto/5ogen.png" alt="dobbelsteen">
-
-                <div class="o">
-                <p id="output"></p>
-                </div>
-                <div class="o">
-                <p id="output1"></p>
-                <p id="output2"></p>
-                <p id="output3"></p>
-                <p id="output4"></p>
-                <p id="output5"></p>
-                <p id="output6"></p>
-                </div>
+                <button class="onthoud" id="onthoud1" type="button" onclick="onthoud(1)"><img id="img1" src="foto/1ogen.png" alt="dobbelsteen"></button>
+                <button class="onthoud" id="onthoud2" type="button" onclick="onthoud(2)"><img id="img2" src="foto/2ogen.png" alt="dobbelsteen"></button>
+                <button class="onthoud" id="onthoud3" type="button" onclick="onthoud(3)"><img id="img3" src="foto/3ogen.png" alt="dobbelsteen"></button>
+                <button class="onthoud" id="onthoud4" type="button" onclick="onthoud(4)"><img id="img4" src="foto/4ogen.png" alt="dobbelsteen"></button>
+                <button class="onthoud" id="onthoud5" type="button" onclick="onthoud(5)"><img id="img5" src="foto/5ogen.png" alt="dobbelsteen"></button>
+                <br>
+                <button id="nieuw" onClick="window.location.reload();">nieuw spel</button>
             </div>
             <div class="grid-item3">
-                <p>speler 2</p>
-                <li>
-                    <ul>1</ul>
-                    <ul>2</ul>
-                    <ul>3</ul>
-                    <ul>4</ul>
-                    <ul>5</ul>
-                    <ul>6</ul>
-                    <br>
-                    <ul>three of a kind</ul>
-                    <ul>four of a kind</ul>
-                    <ul>full house</ul>
-                    <ul>kleine straat</ul>
-                    <ul>groote straat</ul>
-                    <ul>top score/yahtzee</ul>
-                    <ul>chance</ul>
-                    <br>
-                    <ul>totaal punten</ul>
-                </li>
+                <fieldset>
+                    <legend>speler 2</legend>
+                    <p id="een2">een = </p><button id="eenb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="twee2">twee = </p><button id="tweeb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="drie2">drie = </p><button id="drieb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="vier2">vier = </p><button id="vierb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="vijf2">vijf = </p><button id="vijfb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="zes2">zes = </p><button id="zesb2" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <hr>
+                    <p id="subtotaal2">subtotaal = </p><br><br>
+                    <p id="bonus2">bonus = </p><br><br>
+                    <p id="totaal2">totaal = </p><br><br>
+                    <hr>
+                    <label for="threeofakind2">three of a kind</label>
+                    <input class="in" type="number" id="threeofakind2" name="threeofakind"><br><br>
+                    <label for="fourofakind2">four of a kind</label>
+                    <input class="in" type="number" id="fourofakind2" name="fourofakind"><br><br>
+
+                    <input type="checkbox" id="full2" name="full" value="25">
+                    <label for="full2"> Full house (25)</label><br>
+                    <input type="checkbox" id="klein2" name="klein" value="30">
+                    <label for="klein2"> kleine straat (30)</label><br>
+                    <input type="checkbox" id="groot2" name="groot" value="40">
+                    <label for="groot2"> groote traat (40)</label><br>
+                    <input type="checkbox" id="yatzee2" name="yathzee" value="50">
+                    <label for="yatzee2"> yathzee (50)</label><br><br>
+
+                    <label for="chance2">chance</label>
+                    <input class="in" type="number" id="chance2" name="chance"><br><br>
+                    <hr>
+                    <label for="totaalall2">totaal alles</label>
+                    <input class="in" type="number" id="totaalall2" name="totaalall"><br><br>
+                    </fieldset>
             </div>
         </div>
     </body>
