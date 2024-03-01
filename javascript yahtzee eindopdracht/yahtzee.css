@@ -20,7 +20,6 @@ body{
     text-align: center;
     
     border-style: solid;
-    border-color: black;
     border-radius: 10px;
     border-width: 5px;
 
@@ -35,7 +34,6 @@ body{
     text-align: center;
     
     border-style: solid;
-    border-color: black;
     border-radius: 10px;
     border-width: 5px;
 
@@ -119,6 +117,24 @@ fieldset{
 legend{
     text-align: center;
 }
+#P1{
+    font-size: larger;
+    color: chartreuse;
+}
+#P2{
+    font-size: larger;
+    color: black;
+}
+#p1.is-active{color: black;}
+#p2.is-active{color: chartreuse;}
+#B1{
+    border-color: chartreuse;
+}
+#B2{
+    border-color: black;
+}
+#B1.is-active{border-color: black;}
+#B2.is-active{border-color: chartreuse;}
 .in{
     max-width: auto;
     width: 20vw;

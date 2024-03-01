@@ -7,39 +7,33 @@
     </head>
     <body>
         <div class="grid-container">
-            <div class="grid-item1">
+            <div class="grid-item1" id="B1">
                 <fieldset>
-                    <legend>speler 1</legend>
-                    <p id="een">een = </p><button id="eenb" type="button" onclick="vasta(1)">kies</button><br><br>
-                    <p id="twee">twee = </p><button id="tweeb" type="button" onclick="vasta(2)">kies</button><br><br>
-                    <p id="drie">drie = </p><button id="drieb" type="button" onclick="vasta(3)">kies</button><br><br>
-                    <p id="vier">vier = </p><button id="vierb" type="button" onclick="vasta(4)">kies</button><br><br>
-                    <p id="vijf">vijf = </p><button id="vijfb" type="button" onclick="vasta(5)">kies</button><br><br>
-                    <p id="zes">zes = </p><button id="zesb" type="button" onclick="vasta(6)">kies</button><br><br>
+
+                    <input type="text" id="naam1" name="naam1">
+                    <button id="add1" type="button" onclick="add1()">add person</button>
+
+                    <legend id="P1">speler 1</legend>
+                    <p id="een">een = </p><button id="eena" type="button" onclick="vasta(1)">kies</button><br><br>
+                    <p id="twee">twee = </p><button id="tweea" type="button" onclick="vasta(2)">kies</button><br><br>
+                    <p id="drie">drie = </p><button id="driea" type="button" onclick="vasta(3)">kies</button><br><br>
+                    <p id="vier">vier = </p><button id="viera" type="button" onclick="vasta(4)">kies</button><br><br>
+                    <p id="vijf">vijf = </p><button id="vijfa" type="button" onclick="vasta(5)">kies</button><br><br>
+                    <p id="zes">zes = </p><button id="zesa" type="button" onclick="vasta(6)">kies</button><br><br>
                     <hr>
                     <p id="subtotaal1">subtotaal = </p><br><br>
                     <p id="bonus1">bonus = </p><br><br>
                     <p id="totaal1">totaal = </p><br><br>
                     <hr>
-                    <label for="threeofakind1">three of a kind</label>
-                    <input class="in" type="number" id="threeofakind1" name="threeofakind"><br><br>
-                    <label for="fourofakind1">four of a kind</label>
-                    <input class="in" type="number" id="fourofakind1" name="fourofakind"><br><br>
-
-                    <input type="checkbox" id="full1" name="full" value="25">
-                    <label for="full1"> Full house (25)</label><br>
-                    <input type="checkbox" id="klein1" name="klein" value="30">
-                    <label for="klein1"> kleine straat (30)</label><br>
-                    <input type="checkbox" id="groot1" name="groot" value="40">
-                    <label for="groot1"> groote traat (40)</label><br>
-                    <input type="checkbox" id="yatzee1" name="yathzee" value="50">
-                    <label for="yatzee1"> yathzee (50)</label><br><br>
-
-                    <label for="chance1">chance</label>
-                    <input class="in" type="number" id="chance1" name="chance"><br><br>
+                    <p id="three1">three of a kind = </p><button id="threea" type="button" onclick="vasta1()">kies</button><br><br>
+                    <p id="four1">four of a kind = </p><button id="foura" type="button" onclick="vasta2()">kies</button><br><br>
+                    <p id="full1">(25)full house = </p><button id="fulla" type="button" onclick="vasta3()">kies</button><br><br>
+                    <p id="klein1">(30)kleine straat = </p><button id="kleina" type="button" onclick="vasta4()">kies</button><br><br>
+                    <p id="groot1">(40)groote straat = </p><button id="groota" type="button" onclick="vasta5()">kies</button><br><br>
+                    <p id="yahtzee1">(50)yahtzee = </p><button id="yathzeea" type="button" onclick="vasta6()">kies</button><br><br>
+                    <p id="chance1">chance = </p><button id="chancea" type="button" onclick="vasta7()">kies</button><br><br>
                     <hr>
-                    <label for="totaalall1">totaal alles</label>
-                    <input class="in" type="number" id="totaalall1" name="totaalall"><br><br>
+                    <p id="totaalall1">totaal alles = </p><br><br>
                     </fieldset>
             </div>
             <div class="grid-item2">
@@ -54,39 +48,33 @@
                 <br>
                 <button id="nieuw" onClick="window.location.reload();">nieuw spel</button>
             </div>
-            <div class="grid-item3">
+            <div class="grid-item3" id="B2">
                 <fieldset>
-                    <legend>speler 2</legend>
-                    <p id="een2">een = </p><button id="eenb2" type="button" onclick="vastb(1)">kies</button><br><br>
-                    <p id="twee2">twee = </p><button id="tweeb2" type="button" onclick="vastb(1)">kies</button><br><br>
-                    <p id="drie2">drie = </p><button id="drieb2" type="button" onclick="vastb(1)">kies</button><br><br>
-                    <p id="vier2">vier = </p><button id="vierb2" type="button" onclick="vastb(1)">kies</button><br><br>
-                    <p id="vijf2">vijf = </p><button id="vijfb2" type="button" onclick="vastb(1)">kies</button><br><br>
-                    <p id="zes2">zes = </p><button id="zesb2" type="button" onclick="vastb(1)">kies</button><br><br>
+
+                    <input type="text" id="naam2" name="naam2">
+                    <button id="add2" type="button" onclick="add2()">add person</button>
+
+                    <legend id="P2">speler 2</legend>
+                    <p id="een2">een = </p><button id="eenb" type="button" onclick="vastb(1)">kies</button><br><br>
+                    <p id="twee2">twee = </p><button id="tweeb" type="button" onclick="vastb(2)">kies</button><br><br>
+                    <p id="drie2">drie = </p><button id="drieb" type="button" onclick="vastb(3)">kies</button><br><br>
+                    <p id="vier2">vier = </p><button id="vierb" type="button" onclick="vastb(4)">kies</button><br><br>
+                    <p id="vijf2">vijf = </p><button id="vijfb" type="button" onclick="vastb(5)">kies</button><br><br>
+                    <p id="zes2">zes = </p><button id="zesb" type="button" onclick="vastb(6)">kies</button><br><br>
                     <hr>
                     <p id="subtotaal2">subtotaal = </p><br><br>
                     <p id="bonus2">bonus = </p><br><br>
                     <p id="totaal2">totaal = </p><br><br>
                     <hr>
-                    <label for="threeofakind2">three of a kind</label>
-                    <input class="in" type="number" id="threeofakind2" name="threeofakind"><br><br>
-                    <label for="fourofakind2">four of a kind</label>
-                    <input class="in" type="number" id="fourofakind2" name="fourofakind"><br><br>
-
-                    <input type="checkbox" id="full2" name="full" value="25">
-                    <label for="full2"> Full house (25)</label><br>
-                    <input type="checkbox" id="klein2" name="klein" value="30">
-                    <label for="klein2"> kleine straat (30)</label><br>
-                    <input type="checkbox" id="groot2" name="groot" value="40">
-                    <label for="groot2"> groote traat (40)</label><br>
-                    <input type="checkbox" id="yatzee2" name="yathzee" value="50">
-                    <label for="yatzee2"> yathzee (50)</label><br><br>
-
-                    <label for="chance2">chance</label>
-                    <input class="in" type="number" id="chance2" name="chance"><br><br>
+                    <p id="three2">three of a kind = </p><button id="threeb" type="button" onclick="vastb1()">kies</button><br><br>
+                    <p id="four2">four of a kind = </p><button id="fourb" type="button" onclick="vastb2()">kies</button><br><br>
+                    <p id="full2">(25)full house = </p><button id="fullb" type="button" onclick="vastb3()">kies</button><br><br>
+                    <p id="klein2">(30)kleine straat = </p><button id="kleinb" type="button" onclick="vastb4()">kies</button><br><br>
+                    <p id="groot2">(40)groote straat = </p><button id="grootb" type="button" onclick="vastb5()">kies</button><br><br>
+                    <p id="yahtzee2">(50)yahtzee = </p><button id="yathzeeb" type="button" onclick="vastb6()">kies</button><br><br>
+                    <p id="chance2">chance = </p><button id="chanceb" type="button" onclick="vastb7()">kies</button><br><br>
                     <hr>
-                    <label for="totaalall2">totaal alles</label>
-                    <input class="in" type="number" id="totaalall2" name="totaalall"><br><br>
+                    <p id="totaalall2">totaal alles</p><br><br>
                     </fieldset>
             </div>
         </div>
