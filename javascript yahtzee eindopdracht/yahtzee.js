@@ -251,80 +251,82 @@ function dobel(){
     document.getElementById("totaalall2").innerHTML = "totaal alles = " + totaalal2;
 }
 
-const subcount1 = [];
-const count1 = [];
+const subcount1 = [0,0,0,0,0,0];
+const count1 = [0,0,0,0,0,0,0];
 console.log(count1);
+console.log(subcount1);
 
 function vasta(welke){
     vast1[welke - 1] = false;
-    subcount1.push(dices[welke - 1]);
+    subcount1[welke-1]=(dices[welke - 1]);
 }
 function vasta1(){
     vast1[6] = false;
-    count1.push(dices1[0]);
+    count1[0] = dices1[0];
 }
 function vasta2(){
     vast1[7] = false;
-    count1.push(dices1[1]);
+    count1[1] = dices1[1];
 }
 function vasta3(){
     vast1[8] = false;
-    count1.push(dices1[2]);
+    count1[2] = dices1[2];
 }
 function vasta4(){
     vast1[9] = false;
-    count1.push(dices1[3]);
+    count1[3] = dices1[3];
 }
 function vasta5(){
     vast1[10] = false;
-    count1.push(dices1[4]);
+    count1[4] = dices1[4];
 }
 function vasta6(){
     vast1[11] = false;
-    count1.push(dices1[5]);
+    count1[5] = dices1[5];
 }
 function vasta7(){
     vast1[12] = false;
-    count1.push(dices1[6]);
+    count1[6] = dices1[6];
 }
 
 
 
-const subcount2 = [];
-const count2 = [];
+const subcount2 = [0,0,0,0,0,0];
+const count2 = [0,0,0,0,0,0];
 console.log(count2);
+console.log(subcount2);
 
 function vastb(welke){
     vast2[welke - 1] = false;
-    subcount2.push(dices[welke - 1])
+    subcount2[welke-1]=(dices[welke - 1]);
 }
 function vastb1(){
     vast2[6] = false;
-    count2.push(dices2[0]);
+    count2[0] = dices2[0];
 }
 function vastb2(){
     vast2[7] = false;
-    count2.push(dices2[1]);
+    count2[1] = dices2[1];
 }
 function vastb3(){
     vast2[8] = false;
-    count2.push(dices2[2]);
+    count2[2] = dices2[2];
 }
 function vastb4(){
     vast2[9] = false;
-    count2.push(dices2[3]);
+    count2[3] = dices2[3];
 }
 function vastb5(){
     vast2[10] = false;
-    count2.push(dices2[4]);
+    count2[4] = dices2[4];
 }
 function vastb6(){
     vast2[11] = false;
-    count2.push(dices2[5]);
+    count2[5] = dices2[5];
 }
 function vastb7(){
     vast2[12] = false;
-    count2.push(dices2[6]);
+    count2[6] = dices2[6];
 }
 
 function onthoud(welke){
