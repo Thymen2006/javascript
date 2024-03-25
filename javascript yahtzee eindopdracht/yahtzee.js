@@ -104,48 +104,33 @@ function dobel(){
 
     let three1 = 0;
     let three2 = 0;
-    if(dice[0] == 3||dice[0] == 4||dice[0] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[0] == 3||dice[0] == 4||dice[0] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[1] == 3||dice[1] == 4||dice[1] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[1] == 3||dice[1] == 4||dice[1] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[2] == 3||dice[2] == 4||dice[2] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[2] == 3||dice[2] == 4||dice[2] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[3] == 3||dice[3] == 4||dice[3] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[3] == 3||dice[3] == 4||dice[3] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[4] == 3||dice[4] == 4||dice[4] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[4] == 3||dice[4] == 4||dice[4] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[5] == 3||dice[5] == 4||dice[5] == 5){three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[5] == 3||dice[5] == 4||dice[5] == 5){three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
+    for(i = 0; i < 6; i++){
+        if(dice[i] >= 3){
+            three1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
+            three2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
+        }
+    }
 
     let four1 = 0;
     let four2 = 0;
-    if(dice[0] == 4||dice[0] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[0] == 4||dice[0] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[1] == 4||dice[1] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[1] == 4||dice[1] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[2] == 4||dice[2] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[2] == 4||dice[2] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[3] == 4||dice[3] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[3] == 4||dice[3] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[4] == 4||dice[4] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[4] == 4||dice[4] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[5] == 4||dice[5] == 5){four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
-    if(dice[5] == 4||dice[5] == 5){four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5]}
+    for(i = 0; i < 6; i++){
+        if(dice[i] >= 4){
+            four1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
+            four2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
+        }
+    }
 
     let full1 = 0;
     let full2 = 0;
-    if(dice[0] == 3 && dice[1] == 2 ||dice[0] == 3 && dice[2] == 2||dice[0] == 3 && dice[3] == 2||dice[0] == 3 && dice[4] == 2||dice[0] == 3 && dice[5] == 2){full1 = 25}
-    if(dice[0] == 3 && dice[1] == 2 ||dice[0] == 3 && dice[2] == 2||dice[0] == 3 && dice[3] == 2||dice[0] == 3 && dice[4] == 2||dice[0] == 3 && dice[5] == 2){full2 = 25}
-    if(dice[1] == 3 && dice[0] == 2 ||dice[1] == 3 && dice[2] == 2||dice[1] == 3 && dice[3] == 2||dice[1] == 3 && dice[4] == 2||dice[1] == 3 && dice[5] == 2){full1 = 25}
-    if(dice[1] == 3 && dice[0] == 2 ||dice[1] == 3 && dice[2] == 2||dice[1] == 3 && dice[3] == 2||dice[1] == 3 && dice[4] == 2||dice[1] == 3 && dice[5] == 2){full2 = 25}
-    if(dice[2] == 3 && dice[1] == 2 ||dice[2] == 3 && dice[0] == 2||dice[2] == 3 && dice[3] == 2||dice[2] == 3 && dice[4] == 2||dice[2] == 3 && dice[5] == 2){full1 = 25}
-    if(dice[2] == 3 && dice[1] == 2 ||dice[2] == 3 && dice[0] == 2||dice[2] == 3 && dice[3] == 2||dice[2] == 3 && dice[4] == 2||dice[2] == 3 && dice[5] == 2){full2 = 25}
-    if(dice[3] == 3 && dice[1] == 2 ||dice[3] == 3 && dice[2] == 2||dice[3] == 3 && dice[0] == 2||dice[3] == 3 && dice[4] == 2||dice[3] == 3 && dice[5] == 2){full1 = 25}
-    if(dice[3] == 3 && dice[1] == 2 ||dice[3] == 3 && dice[2] == 2||dice[3] == 3 && dice[0] == 2||dice[3] == 3 && dice[4] == 2||dice[3] == 3 && dice[5] == 2){full2 = 25}
-    if(dice[4] == 3 && dice[1] == 2 ||dice[4] == 3 && dice[2] == 2||dice[4] == 3 && dice[3] == 2||dice[4] == 3 && dice[0] == 2||dice[4] == 3 && dice[5] == 2){full1 = 25}
-    if(dice[4] == 3 && dice[1] == 2 ||dice[4] == 3 && dice[2] == 2||dice[4] == 3 && dice[3] == 2||dice[4] == 3 && dice[0] == 2||dice[4] == 3 && dice[5] == 2){full2 = 25}
-    if(dice[5] == 3 && dice[1] == 2 ||dice[5] == 3 && dice[2] == 2||dice[5] == 3 && dice[3] == 2||dice[5] == 3 && dice[4] == 2||dice[5] == 3 && dice[1] == 2){full1 = 25}
-    if(dice[5] == 3 && dice[1] == 2 ||dice[5] == 3 && dice[2] == 2||dice[5] == 3 && dice[3] == 2||dice[5] == 3 && dice[4] == 2||dice[5] == 3 && dice[1] == 2){full2 = 25}
+    for(j = 0; j <6; j++){
+        for(i = 0; i < 6; i++){
+            if(dice[i] == 3 && dice[j] == 2){
+                full1 = 25;
+                full2 = 25;
+                console.log("full house");
+            }
+        }
+    } 
 
     let klein1 = 0;
     let klein2 = 0;
@@ -159,8 +144,12 @@ function dobel(){
 
     let yathz1 = 0;
     let yathz2 = 0;
-    if(dice[0] == 5){yathz1 = 50}if(dice[1] == 5){yathz1 = 50}if(dice[2] == 5){yathz1 = 50}if(dice[3] == 5){yathz1 = 50}if(dice[4] == 5){yathz1 = 50}if(dice[5] == 5){yathz1 = 50}
-    if(dice[0] == 5){yathz2 = 50}if(dice[1] == 5){yathz2 = 50}if(dice[2] == 5){yathz2 = 50}if(dice[3] == 5){yathz2 = 50}if(dice[4] == 5){yathz2 = 50}if(dice[5] == 5){yathz2 = 50}
+    for(i = 0; i < 6; i++){
+        if(dice[i] == 5){
+            yathz1 = 50;
+            yathz2 = 50;
+        }
+    }
 
     let chance1 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
     let chance2 = dices[0] + dices[1] + dices[2] + dices[3] + dices[4] + dices[5];
@@ -288,8 +277,6 @@ function vasta7(){
     vast1[12] = false;
     count1[6] = dices1[6];
 }
-
-
 
 const subcount2 = [0,0,0,0,0,0];
 const count2 = [0,0,0,0,0,0];
